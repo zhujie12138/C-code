@@ -1,21 +1,14 @@
 //绘制重叠函数函数
 #include <stdio.h>
 #include <math.h>
-
-
-
-#define accuracy 0.1
-
+#include "function.h"
 #define rho0 0.1693
 #define R 6.38
 #define a 0.535
 #define rho(s,z) rho0/(1+exp((sqrt(s*s+z*z)-R)/a))
+
 #define cross_section 4.2 
-
-double T(double s);
-double overlap(double b);
-
-
+#define accuracy 0.1
 
 
 
